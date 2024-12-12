@@ -214,3 +214,166 @@ div.client-info {
     display: flex;
     flex-direction: column;
 }
+
+/* Media query para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .right-side-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .right-side-about-us img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .cards-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px; /* Garantir que o texto fique dentro do container */
+    }
+
+    .cards-content img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .cards-content p {
+        font-size: 14px;
+        word-wrap: break-word; /* Quebra o texto para evitar ultrapassar o container */
+    }
+
+    .early-access {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-side-early-access {
+        width: 100%;
+    }
+
+    .left-side-early-access {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query para telas menores que 480px (dispositivos móveis muito pequenos) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 16px;
+    }
+
+    .main-title h1, .main-title-about-us h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .subtitle, .subtitle-about-us {
+        font-size: 14px;
+    }
+
+    .client-data input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .client-data button {
+        width: 100%;
+    }
+
+    .card-about-us {
+        width: 100%;
+    }
+
+    .cards-content {
+        padding: 0 10px; /* Garantir que o texto fique dentro do container */
+    }
+
+    .cards-content p {
+        font-size: 12px;
+        word-wrap: break-word; /* Quebra o texto para evitar ultrapassar o container */
+    }
+}
+
+/* Media query para telas entre 768px e 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-side-content img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .right-side-about-us img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .cards-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .cards-content img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .early-access {
+        padding: 20px;
+    }
+
+    .right-side-early-access {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .left-side-early-access {
+        width: 100%;
+        text-align: center;
+    }
+}
